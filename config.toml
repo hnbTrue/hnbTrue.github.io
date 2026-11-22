@@ -1,0 +1,4 @@
+baseURL = "https://hnbtrue.github.io/"
+languageCode = "vi"
+title = "embeddedworld"
+theme = "PaperMod"
