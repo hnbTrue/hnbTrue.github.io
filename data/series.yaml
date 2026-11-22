@@ -1,0 +1,16 @@
+- slug: start-and-image
+  title: "Start"
+  desc: "Board STM32MP2, image Yocto, SDK và vòng lặp sửa code, build, chạy."
+  order: 1
+- slug: embedded-linux
+  title: "Embedded Linux"
+  desc: "Device tree, driver cơ bản, systemd và công cụ debug."
+  order: 2
+- slug: pipeline-edge-ai
+  title: "Pipeline"
+  desc: "Đưa model lên NPU, đo latency/RAM/CPU và tối ưu quanh model."
+  order: 3
+- slug: a-core-and-m-core
+  title: "Dual core A and M"
+  desc: "Chia việc giữa Linux (Cortex-A) và real-time (Cortex-M33)."
+  order: 4
