@@ -38,3 +38,22 @@ code, pre, .post-content pre code {
 .series-meta { font-size: 0.85rem; color: var(--secondary); }
 a.series-card:hover { border-color: var(--primary); }
 .series-empty { opacity: 0.6; }
+
+.post-content { font-size: 1.05rem; line-height: 1.8; }
+.post-content h2 { margin-top: 2.2rem; }
+.post-content pre, .post-content code { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; }
+.post-content img { border-radius: 8px; }
+:root { --content-gap: 28px; }
+
+
+.series-posts { list-style: none; padding: 0; margin: 1.5rem 0; }
+.series-posts li { margin: 0 0 12px; }
+.series-posts a { display: flex; gap: 16px; align-items: center; padding: 14px 16px;
+  border: 1px solid var(--border); border-left: 4px solid var(--c);
+  border-radius: 10px; background: var(--entry); transition: transform .15s; }
+.series-posts a:hover { transform: translateY(-2px); }
+.series-posts .num { flex: 0 0 40px; height: 40px; border-radius: 50%;
+  background: var(--c); color: #fff; display: grid; place-items: center;
+  font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+.series-posts .title { font-weight: 600; }
+.series-posts .meta { font-size: .8rem; color: var(--secondary); }

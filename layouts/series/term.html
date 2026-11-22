@@ -1,0 +1,22 @@
+{{- define "main" }}
+{{- $info := dict }}
+{{- range site.Data.series }}{{ if eq .slug $.Data.Term }}{{ $info = . }}{{ end }}{{ end }}
+{{- $c := $info.color | default "#3b82f6" }}
+<header class="page-header">
+  <h1>{{ $info.icon }} {{ $info.title | default .Title }}</h1>
+  {{ with $info.desc }}<p>{{ . }}</p>{{ end }}
+</header>
+<ol class="series-posts" style="--c: {{ $c }}">
+  {{- range $i, $p := .Pages.ByDate }}
+  <li>
+    <a href="{{ $p.Permalink }}">
+      <span class="num">{{ add $i 1 }}</span>
+      <span>
+        <span class="title">{{ $p.Title }}</span><br>
+        <span class="meta">{{ $p.Date.Format "02/01/2006" }} · {{ $p.ReadingTime }} phút đọc</span>
+      </span>
+    </a>
+  </li>
+  {{- end }}
+</ol>
+{{- end }}

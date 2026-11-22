@@ -1,6 +1,6 @@
 baseURL = "https://hnbtrue.github.io/"
 languageCode = "vi"
-title = "embeddedworld"
+title = "Embedded Linux World"
 theme = "PaperMod"
 
 [taxonomies]
@@ -9,6 +9,16 @@ theme = "PaperMod"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+[params.label]
+  text = "Embedded World"
+  icon = "/logo.png"
+  iconHeight = 32
+
+[params.assets]
+  favicon = "/logo.png"
+  favicon16x16 = "/logo.png"
+  favicon32x32 = "/logo.png"
+  apple_touch_icon = "/logo.png"
 
 [params]
   defaultTheme = "auto"
@@ -21,9 +31,17 @@ theme = "PaperMod"
   ShowRssButtonInSectionTermList = true
   TocOpen = false
 
+  images = ["logo.png"]
+
   [params.homeInfoParams]
     Title = "Xin chào 👋"
     Content = "Embedded Linux và Edge AI trên STM32MP2."
+
+[params.footer]
+  text = "© 2026 [Embedded Linux World](https://hnbtrue.github.io/) - hnb"
+  hideCopyright = true
+  hidePoweredBy = true
+
 
 [[menu.main]]
   name = "Bắt đầu"
